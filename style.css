@@ -1,0 +1,109 @@
+/* ===== Reset & Base ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;                 /* FLEXBOX */
+  justify-content: center;
+  align-items: center;
+  background: #f2f4f8;
+}
+
+/* ===== Container ===== */
+.container {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Heading ===== */
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ===== Form Layout ===== */
+.form {
+  display: grid;                 /* GRID */
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* ===== Form Group ===== */
+.form-group {
+  display: flex;                 /* FLEXBOX */
+  flex-direction: column;
+}
+
+/* ===== Labels ===== */
+.form-group label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* ===== Inputs ===== */
+.form-group input {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* ===== Error Text ===== */
+.form-group small {
+  color: #e11d48;
+  font-size: 12px;
+  margin-top: 4px;
+  min-height: 14px; /* keeps layout stable */
+}
+
+/* ===== Button ===== */
+.btn {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #4f46e5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background: #4338ca;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* ===== Responsive (Optional 2-column later) ===== */
+@media (min-width: 700px) {
+  /* If you ever want 2 columns, just change this */
+  /* .form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .btn {
+    grid-column: span 2;
+  } */
+}
